@@ -1,0 +1,14 @@
+main={
+    light:#8D4B55
+    dark:#1A202C,gray.900
+}
+
+blue = {
+    light:#4299E1
+    dark:#3182CE
+}
+
+red = {
+    light:#8D4B55
+    dark:#89323f
+}
