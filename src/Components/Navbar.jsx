@@ -1,5 +1,6 @@
 import React from "react";
 import { MoonIcon, SunIcon, HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+
 import { Link } from "react-scroll";
 import {
   Avatar,
@@ -20,6 +21,7 @@ import {
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
+
 const Links = ["About", "Skill", "Project", "Mini Project"];
 const NavLink = ({ children }) => (
   <Link

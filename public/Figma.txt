@@ -1,6 +1,7 @@
 main={
     light:#8D4B55
     dark:#1A202C,gray.900
+    
 }
 
 blue = {
@@ -11,4 +12,8 @@ blue = {
 red = {
     light:#8D4B55
     dark:#89323f
+}
+tile = {
+    light:#38B2AC
+    dark:#319795
 }

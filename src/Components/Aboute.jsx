@@ -19,7 +19,7 @@ const Aboute = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <div>
-      <Container maxW={"7xl"}>
+      <Container maxW={"7xl"} id="About">
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}
