@@ -4,7 +4,6 @@ import {
   Container,
   Flex,
   Heading,
-  IconButton,
   Image,
   Link,
   Stack,
@@ -16,7 +15,6 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 const Aboute = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <div>
       <Container maxW={"7xl"} id="About">

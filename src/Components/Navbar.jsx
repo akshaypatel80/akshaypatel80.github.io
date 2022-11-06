@@ -16,13 +16,12 @@ import {
   MenuItem,
   MenuList,
   Stack,
-  textDecoration,
   useColorMode,
   useColorModeValue,
   useDisclosure,
 } from "@chakra-ui/react";
 
-const Links = ["About", "Skill", "Project", "Mini Project"];
+const Links = ["About", "Skill", "Project", "Contact"];
 const NavLink = ({ children }) => (
   <Link
     style={{ cursor: "pointer" }}
@@ -113,24 +112,14 @@ const Navbar = () => {
                 bg: "blue.500",
               }}
             >
-              <Link
+              <a
+                href="https://drive.google.com/file/d/1yYi3vDLi9hyXKPZ3w4CP2d9Ej_AoHMkr/view?usp=sharing"
                 style={{ cursor: "pointer" }}
-                px={2}
-                py={1}
+                target={"_blank"}
                 rounded={"md"}
-                _hover={{
-                  textDecoration: "none",
-                  bg: useColorModeValue("#8D4B55", "gray.700"),
-                }}
-                activeClass="active"
-                to={"Contact"}
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
               >
-                Contact
-              </Link>
+                Resume
+              </a>
             </Button>
             <Menu>
               <MenuButton

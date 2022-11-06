@@ -1,12 +1,4 @@
-import {
-  Box,
-  Heading,
-  Image,
-  Stack,
-  Text,
-  useColorMode,
-  useColorModeValue,
-} from "@chakra-ui/react";
+import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import Marquee from "react-fast-marquee";
 import "./Skill.css";
@@ -53,7 +45,7 @@ const skillsData = [
   },
   {
     id: 9,
-    logo: "https://png2.cleanpng.com/sh/a79557dfd3693291960ab934cf9ca2ae/L0KzQYm3VsE1N5ZBkZH0aYP2gLBuTf5wbJYyguU2ZYjzgrb6k71re15veehqc3P1ecH7TgNwdKZ5gdH3LYP3cbTyTgdmal5mRadrMkLlSbW8V8Q0PpU3RqcBM0i5QYa7UcUzQWE1SqYAM0S6RnB3jvc=/kisspng-node-js-express-js-javascript-solution-stack-web-a-5b22b9d57436d2.563861541529002453476.png",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
     name: "Express JS",
   },
   {
@@ -64,7 +56,6 @@ const skillsData = [
 ];
 
 const Skill = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <div id="Skill">
       <Heading

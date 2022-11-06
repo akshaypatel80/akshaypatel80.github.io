@@ -1,11 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Aboute from "./Components/Aboute";
 import Skill from "./Components/Skill";
 import { Stack } from "@chakra-ui/react";
 import Project from "./Components/Project";
-import Testimonials from "./Components/Testimonials";
+import Calendar from "./Components/Calendar";
+import Contact from "./Components/Contact";
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
         <Aboute />
         <Skill />
         <Project />
-        {/* <Testimonials /> */}
+        <Calendar />
+        <Contact />
       </Stack>
     </div>
   );

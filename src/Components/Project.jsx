@@ -1,15 +1,4 @@
-import {
-  Avatar,
-  Box,
-  Flex,
-  Heading,
-  Icon,
-  SimpleGrid,
-  chakra,
-  useColorMode,
-  useColorModeValue,
-  Container,
-} from "@chakra-ui/react";
+import { Heading, SimpleGrid, useColorMode, Container } from "@chakra-ui/react";
 import React from "react";
 import ProjectCard from "./ProjectCard";
 const data = [
@@ -40,16 +29,15 @@ const data = [
   },
   {
     id: 3,
-    name: "Best Buy.ca-Clone",
+    name: "Kind meal.my clone",
     image:
-      "https://drive.google.com/uc?export=view&id=1Aqc7ebC-t3IokwxzaFwTBJWWvCulYIAL",
+      "https://drive.google.com/uc?export=view&id=1-zZqQlRVoZ_dO5RM5crXTQ0jmczBmP0p",
     description:
-      "Best Buy.ca is an E-commerce website famous for its electronics products.",
-    responsibility: ["Solo", "E-Commerce"],
+      "kindmeal.my is an restaurants finding website famous for its best restaurants food",
+    responsibility: ["Solo", "restaurants"],
     TechStack: ["CSS", "JavaScript", "React", "Chakra UI", "Axios", "Heroku"],
-    github: "https://github.com/akshaypatel80/last-fruit-1413",
-    deployment:
-      "https://isnt-akpatel260199-gmail-com-awesome-5ef48.netlify.app/",
+    github: "https://github.com/akshaypatel80/domineering-kick-7131",
+    deployment: "https://kindmeale.netlify.app/",
   },
 ];
 const Project = () => {
