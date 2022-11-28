@@ -53,6 +53,11 @@ const skillsData = [
     logo: "https://img.icons8.com/color/480/000000/git.png",
     name: "Git hub",
   },
+  {
+    id: 11,
+    logo: "https://img.icons8.com/fluency/480/null/typescript--v2.png",
+    name: "Typescript",
+  },
 ];
 
 const Skill = () => {
@@ -78,8 +83,13 @@ const Skill = () => {
           direction="right"
         >
           {skillsData.map((skill, id) => (
-            <Box key={skill.id} textAlign={"center"} className="skill--box">
-              <Image src={skill.logo} alt={skill.name} width={"70%"} />
+            <Box
+              key={skill.id}
+              textAlign={"center"}
+              className="skill--box"
+              boxSize={[24, 32, 40]}
+            >
+              <Image src={skill.logo} alt={skill.name} width={{ lg: "70%" }} />
               <Text fontSize={{ base: "md", sm: "sm", lg: "25px" }}>
                 {skill.name}
               </Text>

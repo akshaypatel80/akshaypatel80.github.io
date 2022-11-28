@@ -17,7 +17,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Aboute = () => {
   return (
     <div>
-      <Container maxW={"7xl"} id="About">
+      <Container maxW={"7xl"} id={"About" && "Home"}>
         <Stack
           align={"center"}
           spacing={{ base: 8, md: 10 }}

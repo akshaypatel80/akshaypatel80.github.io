@@ -21,7 +21,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
-const Links = ["About", "Skill", "Project", "Contact"];
+const Links = ["Home", "About", "Skill", "Project", "Contact"];
 const NavLink = ({ children }) => (
   <Link
     style={{ cursor: "pointer" }}
