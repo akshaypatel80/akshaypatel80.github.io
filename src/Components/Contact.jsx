@@ -20,7 +20,12 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import { BsGithub, BsLinkedin, BsPerson, BsInstagram } from "react-icons/bs";
+import {
+  BsGithub,
+  BsLinkedin,
+  BsPerson,
+  BsFillTelephoneFill,
+} from "react-icons/bs";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 import emailjs from "emailjs-com";
 const confetti = {
@@ -39,6 +44,8 @@ const CONFETTI_DARK = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 
 const Contact = () => {
   const { hasCopied, onCopy } = useClipboard("akpatel260199@gmail.com");
+  const { copyNumber, Copy } = useClipboard("+91 9662804780");
+
   const toast = useToast();
 
   const handleEmail = (e) => {
@@ -155,22 +162,25 @@ const Contact = () => {
                     />
                   </Link>
 
-                  <Link
-                    href="https://www.instagram.com/akshay_2601/"
-                    target={"_blank"}
+                  <Tooltip
+                    label={copyNumber ? "+91 9662804780" : "+91 9662804780"}
+                    closeOnClick={false}
+                    hasArrow
                   >
                     <IconButton
-                      aria-label="instagram"
+                      aria-label="email"
                       variant="ghost"
                       size="lg"
-                      icon={<BsInstagram size="28px" />}
+                      fontSize="3xl"
+                      icon={<BsFillTelephoneFill />}
                       _hover={{
                         bg: useColorModeValue("#89323f", "#3182CE"),
                         color: useColorModeValue("white", "black"),
                       }}
+                      onClick={Copy}
                       isRound
                     />
-                  </Link>
+                  </Tooltip>
 
                   <Link
                     href="https://www.linkedin.com/in/akshay-patel-9b96b816a/"
