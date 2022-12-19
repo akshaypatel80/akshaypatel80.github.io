@@ -117,6 +117,7 @@ const Navbar = () => {
                 style={{ cursor: "pointer" }}
                 target={"_blank"}
                 rounded={"md"}
+                download
               >
                 Resume
               </a>
