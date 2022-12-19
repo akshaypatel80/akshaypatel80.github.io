@@ -45,6 +45,11 @@ const NavLink = ({ children }) => (
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const handleDownload = () => {
+    window.open(
+      "https://drive.google.com/u/0/uc?id=1yYi3vDLi9hyXKPZ3w4CP2d9Ej_AoHMkr&export=download"
+    );
+  };
   return (
     <div>
       <Box
@@ -106,6 +111,7 @@ const Navbar = () => {
               )}
             </Button>
             <Button
+              onClick={handleDownload}
               bg={"blue.400"}
               //   color={"white"}
               _hover={{
@@ -115,9 +121,8 @@ const Navbar = () => {
               <a
                 href="https://drive.google.com/file/d/1yYi3vDLi9hyXKPZ3w4CP2d9Ej_AoHMkr/view?usp=sharing"
                 style={{ cursor: "pointer" }}
-                target={"_blank"}
                 rounded={"md"}
-                download
+                target={"_blank"}
               >
                 Resume
               </a>

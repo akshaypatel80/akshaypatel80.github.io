@@ -15,6 +15,11 @@ import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 const Aboute = () => {
+  const handleDownload = () => {
+    window.open(
+      "https://drive.google.com/u/0/uc?id=1yYi3vDLi9hyXKPZ3w4CP2d9Ej_AoHMkr&export=download"
+    );
+  };
   return (
     <div>
       <Container maxW={"7xl"} id={"About" && "Home"}>
@@ -75,6 +80,7 @@ const Aboute = () => {
                 color={"white"}
                 bg={useColorModeValue("#8D4B55", "#4299E1")}
                 _hover={{ bg: useColorModeValue("#89323f", "#3182CE") }}
+                onClick={handleDownload}
               >
                 <Link
                   style={{ textDecoration: "none" }}
