@@ -39,6 +39,30 @@ const data = [
     github: "https://github.com/akshaypatel80/domineering-kick-7131",
     deployment: "https://kindmeale.netlify.app/",
   },
+  {
+    id: 4,
+    name: " Freshly.com clone",
+    image:
+      "https://user-images.githubusercontent.com/96005514/209442724-34ac9e8f-8f45-45e3-a33d-6a7d6d9220ad.png",
+    description:
+      "Freshly is a weekly subscription that delivers fresh meals. Created Carts, Products, Users, Admin API ( Back-End ). Except Payment Page Completed All Pages ( Front-End ). It was a collaborative project",
+    responsibility: ["Collaborative", "restaurants", "admin"],
+    TechStack: ["React", "Redux", "Chakra UI", "Node", "Express", "Mongodb"],
+    github: "https://github.com/Dhamisir/Freshly-Website-Clone",
+    deployment: "https://sophisticated-legs-486.netlify.app/",
+  },
+  {
+    id: 5,
+    name: "dailyobjects.com clone",
+    image:
+      "https://github.com/vraj79/faithful-lock-5927/raw/fw20_1138_day-4/frontend/public/project_ss/Screenshot%20(62).png",
+    description:
+      "It’s Group project where we've used MERN stack to build the dailyobjects.com with our creativity along with frontend and backend integration its Fully Responsive. Daily Objects is a E-Commerce Website who deals with the cases,covers & bags. Created Carts, Products, Users, Admin API ( Back-End )",
+    responsibility: ["Collaborative", "E-commerce", "admin"],
+    TechStack: ["React", "Redux", "Chakra UI", "Node", "Express", "Mongodb"],
+    github: "https://github.com/vraj79/faithful-lock-5927",
+    deployment: "https://dailyshope.netlify.app/",
+  },
 ];
 const Project = () => {
   const { colorMode, toggleColorMode } = useColorMode();
