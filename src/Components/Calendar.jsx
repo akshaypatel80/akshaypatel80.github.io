@@ -45,14 +45,7 @@ const Calendar = () => {
           Github
         </Heading>
         <Stack align={"center"} mt={"2rem"}>
-          <GitHubCalendar
-            username="akshaypatel80"
-            transformData={selectLastHalfYear}
-            blockSize={15}
-            fontSize={15}
-            // hideTotalCount
-            // hideColorLegend
-          >
+          <GitHubCalendar username="akshaypatel80">
             <ReactTooltip delayShow={20} html />
           </GitHubCalendar>
         </Stack>
