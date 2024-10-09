@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import profile_image from "../image/profile-image.jpeg";
 
 const Aboute = () => {
   const handleDownload = () => {
@@ -122,9 +123,7 @@ const Aboute = () => {
                 borderRadius={"20px"}
                 w={"100%"}
                 // h={"100%"}
-                src={
-                  "https://drive.google.com/uc?export=view&id=1MFObKKiaQ-TG6nTMocZxRyI0dA8MD_6M"
-                }
+                src={profile_image}
               />
             </Box>
           </Flex>
